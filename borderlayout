@@ -1,0 +1,26 @@
+import java.awt.*;
+004 import java.awt.event.*;
+005 
+006 public class Listing3104
+007 extends Frame
+008 {
+009   public static void main(String[] args)
+010   {
+011     Listing3104 wnd = new Listing3104();
+012     wnd.setVisible(true);
+013   }
+014 
+015   public Listing3104()
+016   {
+017     super("Test BorderLayout");
+018     addWindowListener(new WindowClosingAdapter(true));
+019     //Layout setzen und Komponenten hinzufügen
+020     setSize(300,200);
+021     setLayout(new BorderLayout());
+022     add(new Button("Button 1"), BorderLayout.NORTH);
+023     add(new Button("Button 2"), BorderLayout.SOUTH);
+024     add(new Button("Button 3"), BorderLayout.WEST);
+025     add(new Button("Button 4"), BorderLayout.EAST);
+026     add(new Button("Button 5"), BorderLayout.CENTER);
+027   }
+028 }
