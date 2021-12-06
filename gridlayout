@@ -1,0 +1,27 @@
+import java.awt.*;
+004 import java.awt.event.*;
+005 
+006 public class Listing3103
+007 extends Frame
+008 {
+009   public static void main(String[] args)
+010   {
+011     Listing3103 wnd = new Listing3103();
+012     wnd.setVisible(true);
+013   }
+014 
+015   public Listing3103()
+016   {
+017     super("Test GridLayout");
+018     addWindowListener(new WindowClosingAdapter(true));
+019     //Layout setzen und Komponenten hinzufügen
+020     setLayout(new GridLayout(4,2));
+021     add(new Button("Button 1"));
+022     add(new Button("Button 2"));
+023     add(new Button("Button 3"));
+024     add(new Button("Button 4"));
+025     add(new Button("Button 5"));
+026     add(new Button("Button 6"));
+027     add(new Button("Button 7"));
+028     pack();
+029   }
